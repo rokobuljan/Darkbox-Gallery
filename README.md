@@ -1,2 +1,5 @@
 # Darkbox-Gallery
-Simple Responsive jQuery Gallery
+
+```
+Simple Responsive jQuery Pop-up Gallery
+```
