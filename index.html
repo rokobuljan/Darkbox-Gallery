@@ -4,19 +4,59 @@
         <title>Darkbox</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="darkbox.css"/>
+        <link href="darkbox.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         
-        <img
-            src="http://placehold.it/50x50/f0f"
-            data-darkbox="http://placehold.it/900x600/f0f"
-            data-darkbox-description="<b>Title</b><br>Lorem ipsum dolor sit amet">
+        <h1>Darkbox - demo</h1>
         
-        <img
-            src="http://placehold.it/50x50/cf5"
-            data-darkbox="http://placehold.it/800x1200/cf5"
-            data-darkbox-description="<b>Image 2</b><br>Description text...">
+        <h2>Darkbox basic</h2>
+        
+        <a data-darkbox="http://placehold.it/100x101/ff0">Call image</a>
+        
+        <h2>Darkbox Single</h2>
+
+        <img src="http://placehold.it/50x50/f0f"
+         data-darkbox="http://placehold.it/2800x1901/f0f"
+         data-darkbox-description="<b>Title</b><br>Lorem ipsum dolor sit amet">
+
+        <img src="http://placehold.it/50x50/cf5"
+         data-darkbox="http://placehold.it/6004x5201/cf5"
+         data-darkbox-description="<b>Image 2</b><br>Description text...">
+
+        <h2>Darkbox Groups</h2>
+
+        <p>Group "one"</p>  
+        
+        <img src="http://placehold.it/50x50/f0f"
+         data-darkbox="http://placehold.it/800x600/f0f"
+         data-darkbox-group="one"
+         data-darkbox-description="<b>Title</b><br>Lorem ipsum dolor sit amet">
+
+        <img src="http://placehold.it/50x50/cf5"
+         data-darkbox="http://placehold.it/800x600/cf5"
+         data-darkbox-group="one"
+         data-darkbox-description="<b>Image 2</b><br>Description text...">
+
+        <p>Group "two"</p>    
+        
+        <img src="http://placehold.it/50x50/0bf"
+         data-darkbox="http://placehold.it/1000x600/0bf"
+         data-darkbox-group="two"
+         data-darkbox-description="<b>Title</b><br>Lorem ipsum dolor sit amet">
+
+        <img src="http://placehold.it/50x50/f0b"
+         data-darkbox="http://placehold.it/600x1000/f0b"
+         data-darkbox-group="two"
+         data-darkbox-description="<b>Image 2</b><br>Description text...">
+
+        <h2>Group link</h2>
+    
+        <span data-darkbox-group="group2" data-darkbox="http://placehold.it/800x600/f00"></span>
+        <span data-darkbox-group="group2" data-darkbox="http://placehold.it/600x800/00f"></span>
+        <a data-darkbox-group="group2">Call group2</a>
+
+        
         
         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
         <script src="darkbox.js"></script>
