@@ -6,7 +6,7 @@ Simple, minimal, **responsive** jQuery Pop-up Gallery!
 ## Info:
 
 Open your thumbnails into a responsive popup gallery!  
-**Demo** : * fiddle demo coming soon *
+**[DEMO on jsFiddle.net](https://jsfiddle.net/18em393z/)**
 
 #### Getting started
 
