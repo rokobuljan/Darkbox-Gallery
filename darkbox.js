@@ -3,9 +3,10 @@
 // https://github.com/rokobuljan/Darkbox-Gallery
 (function () {
 
-  var $imagesGroup = $(),
+  var $imagesGroup,
       n = 0, // number of images
       c = 0, // current image index (counter 0-based)
+      
       $prevNext = $("<a id='darkbox_prev'/><a id='darkbox_next'/>").on("touchstart mousedown", function (e) {
         e.preventDefault();
         e.stopPropagation();
@@ -13,20 +14,13 @@
         c = isNext ? ++c : --c;
         showImage();
       }),
+      
       $darkbox = $("<div/>", {
         id: "darkbox",
         append: $prevNext,
         appendTo : "body"
       }),
-      $darkboxImg = $("<img/>", {
-        id: "darkbox_img",
-        appendTo: $darkbox,
-        on :{
-          click : function( e ) {
-            e.stopPropagation();
-          }
-        }
-      }),
+      
       $darkboxClose = $("<a/>", {
         id: "darkbox_close",
         appendTo: $darkbox,
@@ -37,16 +31,16 @@
           }
         }
       }),
+      
       $darkboxDescription = $("<div/>", {
         id: "darkbox_description",
         appendTo : $darkbox
       }),
+      
       $darkboxStats = $("<div/>", {
         id: "darkbox_stats",
         appendTo : $darkbox
       });
-
-
   
   function showImage() {
 
@@ -74,7 +68,6 @@
     }).attr("src", src);
 
   }
-
   
   // Call darkbox
   $(document).on("click", "[data-darkbox],[data-darkbox-group]", function (e) {
@@ -92,7 +85,6 @@
 
     showImage(); // aand, ACTION!
   });
-
   
   // Keyboard navigation
   $(document).on("keyup", function (e) {
