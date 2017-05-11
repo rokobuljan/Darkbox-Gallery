@@ -24,6 +24,14 @@ jQuery library, `darkbox.js` and `darkbox.css` must be included in your project.
 
 ## Use exaple / samples:
 
+### Basic example
+
+**darkbox** can be called by any element, all it needs is a `data-darkbox` with a valid image URL
+
+```html
+<a data-darkbox="http://placehold.it/100x101/ff0">View image</a>
+```
+
 ### Thumbnail calling darkbox
 ```html
 <img src="http://placehold.it/50x50/f0f"
@@ -31,14 +39,6 @@ jQuery library, `darkbox.js` and `darkbox.css` must be included in your project.
      data-darkbox-description="<b>Title</b><br>Lorem ipsum dolor sit amet">
 ```
 Tips: insert any text or HTML into `data-darkbox-description` to add a slide description.
-
-### Link as darkbox
-
-Any element can call **darkbox** all it needs is a `data-darkbox` with a valid image URL
-
-```html
-<a data-darkbox="http://placehold.it/100x101/ff0">View image</a>
-```
 
 ### Groups
 
@@ -60,9 +60,9 @@ If you want to want to **group** a set of images use `data-darkbox-group="groupN
 Tips: Multiple thumbnails without a `data-darkbox-group` will open each separately.  
 Darkbox as *Group* features PREV / NEXT buttons and a *Stat Counter*.
 
-### Link calling group (without thumbnails)
+### Calling a group
 
-If you don't need visible thumbnails but you want a link to call a *Group*:
+If you don't need visible thumbnails but you want a single element to call a *Group*:
 ```html
 <span data-darkbox-group="group2" data-darkbox="http://placehold.it/800x600/f00"></span>
 <span data-darkbox-group="group2" data-darkbox="http://placehold.it/600x800/00f"></span>
