@@ -6,7 +6,7 @@ Simple, minimal, **responsive** jQuery Pop-up Gallery!
 ## Info:
 
 Open your thumbnails into a responsive popup gallery!  
-**[DEMO on jsFiddle.net](https://jsfiddle.net/18em393z/3/)**
+**[DEMO on jsFiddle.net](https://jsfiddle.net/RokoCB/qzugh8yy/)**
 
 #### Getting started
 
@@ -18,8 +18,9 @@ jQuery library, `darkbox.js` and `darkbox.css` must be included in your project.
 
 ```html
 <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-<script src="darkbox.js"></script>
+<script src="darkbox.min.js"></script>
 ```
+<sub>(Preferably place your `<script>`s right before he closing `</body>` tag.)</sub>
 
 ## Use exaple / samples:
 
